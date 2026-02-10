@@ -1,0 +1,136 @@
+:root {
+    /* Light mode (default) */
+    --bg: #ffffff;
+    --text: #000000;
+    --link: #0000ee;
+    --visited: #551a8b;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Dark mode */
+        --bg: #000000;
+        --text: #ffffff;
+        --link: #6495ed;
+        --visited: #9370db;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, "SF Pro", Helvetica, Ubuntu, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 2rem 1rem;
+    max-width: 680px;
+    margin: 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--link);
+    font-family: "Segoe UI", Arial, "SF Pro", Helvetica, Ubuntu, sans-serif;
+}
+
+h1 a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--text);
+    margin: 1rem 0;
+}
+
+.links {
+    margin-bottom: 0.5rem;
+}
+
+.links a {
+    color: var(--link);
+    text-decoration: underline;
+    margin-right: 1rem;
+}
+
+.links a:visited {
+    color: var(--visited);
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.75rem 0;
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+p:first-of-type {
+    font-size: 0.9rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+.projects li {
+    margin-bottom: 0.75rem;
+}
+
+.projects li strong a {
+    padding-right: 0.2rem;
+}
+
+li strong a {
+    color: var(--link);
+    text-decoration: underline;
+}
+
+li strong a:visited {
+    color: var(--visited);
+}
+
+a {
+    color: var(--link);
+}
+
+a:visited {
+    color: var(--visited);
+}
+
+em {
+    font-style: normal;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+        font-size: 15px;
+    }
+}
